@@ -53,9 +53,11 @@ func _physics_process(delta: float) -> void:
 			if is_alive:
 				animation.play("idle")
 		else:
-			animation.play("walk")
+			if is_alive:
+				animation.play("walk")
 	else:
-		animation.play("jump")
+		if is_alive:
+			animation.play("jump")
 		
 
 
@@ -69,8 +71,9 @@ func _physics_process(delta: float) -> void:
 	for i in get_slide_collision_count():
 		var collision = get_slide_collision(i)
 		var collision_pushbox = collision.get_collider()
-		if collision_pushbox.is_in_group("pushboxes") and abs(collision_pushbox.get_linear_velocity().x) < MAX_VELOCITY:
-			collision_pushbox.apply_central_impulse(collision.get_normal() * -PUSH_FORCE)
+		if collision_pushbox:
+			if collision_pushbox.is_in_group("pushboxes") and abs(collision_pushbox.get_linear_velocity().x) < MAX_VELOCITY:
+				collision_pushbox.apply_central_impulse(collision.get_normal() * -PUSH_FORCE)
  
 
 	move_and_slide()

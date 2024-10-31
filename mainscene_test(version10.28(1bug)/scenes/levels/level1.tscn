@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=3 uid="uid://bmul6gare3yxr"]
+[gd_scene load_steps=55 format=3 uid="uid://bmul6gare3yxr"]
 
 [ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_nl1fl"]
 [ext_resource type="PackedScene" uid="uid://cyst85fsck5xa" path="res://scenes/player_test.tscn" id="1_rhjrj"]
@@ -27,6 +27,7 @@
 [ext_resource type="Texture2D" uid="uid://chsectf2qrs1i" path="res://asset/Background/Background_Hills_v1.0(1)/_PNG/background3.png" id="23_4yps8"]
 [ext_resource type="Texture2D" uid="uid://bnhd54cvqolmx" path="res://asset/Background/Background_Hills_v1.0(1)/_PNG/background4.png" id="24_4hfqk"]
 [ext_resource type="PackedScene" uid="uid://b4hevxxo358dp" path="res://角色、推箱子部分/push box.tscn" id="28_i845g"]
+[ext_resource type="PackedScene" uid="uid://b5jbmeafg5020" path="res://scenes/disappearing_object2.tscn" id="29_nxjbs"]
 [ext_resource type="PackedScene" uid="uid://c0ce76gsy6sy7" path="res://scenes/disappearing_object.tscn" id="29_pdhek"]
 
 [sub_resource type="Animation" id="Animation_gj562"]
@@ -814,3 +815,6 @@ position = Vector2(419, 108)
 
 [node name="DisappearingObject" parent="breakable" instance=ExtResource("29_pdhek")]
 position = Vector2(392, -151)
+
+[node name="DisappearingObject" parent="." instance=ExtResource("29_nxjbs")]
+position = Vector2(568, -104)

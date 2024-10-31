@@ -244,9 +244,8 @@ script = ExtResource("1_c2mqo")
 position = Vector2(0, -22.5)
 scale = Vector2(1.39844, 1.39844)
 sprite_frames = SubResource("SpriteFrames_x8fbx")
-animation = &"guitar"
+animation = &"die"
 autoplay = "idle"
-frame_progress = 0.480238
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -22.5)
