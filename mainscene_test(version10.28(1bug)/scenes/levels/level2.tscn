@@ -787,7 +787,7 @@ shape = SubResource("RectangleShape2D_f53u8")
 
 [node name="Flute_Song" type="AudioStreamPlayer2D" parent="win zone"]
 stream = ExtResource("13_cr3bc")
-volume_db = 2.971
+volume_db = 4.952
 
 [node name="killzone" parent="." instance=ExtResource("8_q22nf")]
 position = Vector2(-3.8147e-06, 142)
