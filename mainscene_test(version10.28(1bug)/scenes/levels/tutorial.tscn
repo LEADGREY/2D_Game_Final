@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=3 uid="uid://bugjgi5qjnkl2"]
+[gd_scene load_steps=41 format=3 uid="uid://bugjgi5qjnkl2"]
 
 [ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_bgthq"]
 [ext_resource type="PackedScene" uid="uid://dj0hllcm6fj0l" path="res://scenes/coin.tscn" id="2_t1bve"]
@@ -359,21 +359,6 @@ sources/1 = SubResource("TileSetAtlasSource_ivdsw")
 sources/2 = SubResource("TileSetAtlasSource_c4ecf")
 sources/3 = SubResource("TileSetAtlasSource_lq2pn")
 
-[sub_resource type="Animation" id="Animation_22usj"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1589, -138)]
-}
-
 [sub_resource type="Animation" id="Animation_i46d7"]
 resource_name = "cp0"
 loop_mode = 2
@@ -392,7 +377,6 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_msux8"]
 _data = {
-"RESET": SubResource("Animation_22usj"),
 "cp0": SubResource("Animation_i46d7")
 }
 
