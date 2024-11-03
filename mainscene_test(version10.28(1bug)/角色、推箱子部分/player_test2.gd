@@ -58,9 +58,14 @@ func _physics_process(delta: float) -> void:
 	else:
 		if is_alive:
 			animation.play("jump")
-		
-
-
+	
+	if Input.is_action_just_pressed("attack"):
+		if current_level == "Level1":
+			animation.play("guitar")
+		elif current_level == "Level2":
+			animation.play("flute")
+		elif current_level == "Level3":
+			animation.play("piano")	
 	
 	# apply movement
 	if direction:

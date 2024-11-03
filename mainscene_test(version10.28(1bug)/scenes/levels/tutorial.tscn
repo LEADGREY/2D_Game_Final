@@ -21,7 +21,7 @@
 [ext_resource type="PackedScene" uid="uid://bpvytm7tglis5" path="res://scenes/killzone.tscn" id="18_gdtuq"]
 [ext_resource type="PackedScene" uid="uid://cm825i37xsynf" path="res://scenes/platform_1.tscn" id="19_aohj8"]
 [ext_resource type="FontFile" uid="uid://qccqn5puw4gx" path="res://asset/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="20_23sol"]
-[ext_resource type="PackedScene" uid="uid://cla22ju3wrqcc" path="res://scenes/slime.tscn" id="20_yr8ty"]
+[ext_resource type="PackedScene" uid="uid://cla22ju3wrqcc" path="res://scenes/eagle.tscn" id="20_yr8ty"]
 [ext_resource type="Texture2D" uid="uid://n5vd0ey8ebxv" path="res://asset/Background/Background_Town/_PNG/background_Town1.png" id="21_3wtq1"]
 [ext_resource type="Texture2D" uid="uid://1dek86nmpke8" path="res://asset/Background/Background_Town/_PNG/background_Town2.png" id="22_cmtph"]
 [ext_resource type="Texture2D" uid="uid://dkru7f5dwsaig" path="res://asset/Background/Background_Town/_PNG/background_Town3.png" id="23_oxxw8"]
@@ -625,14 +625,28 @@ texture = ExtResource("23_oxxw8")
 
 [node name="label" type="Node" parent="."]
 
-[node name="Label6" type="Label" parent="label"]
-offset_left = 91.0
-offset_top = 65.0
-offset_right = 263.0
-offset_bottom = 88.0
+[node name="Label" type="Label" parent="label"]
+offset_left = 1493.0
+offset_top = -225.0
+offset_right = 1685.0
+offset_bottom = -184.0
 theme_override_fonts/font = ExtResource("20_23sol")
 theme_override_font_sizes/font_size = 8
-text = "A D(← →) to move!"
+text = "You win!
+As long as you reach the magic note, you will go to the next level"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Label6" type="Label" parent="label"]
+offset_left = 80.0
+offset_top = 39.0
+offset_right = 252.0
+offset_bottom = 62.0
+theme_override_fonts/font = ExtResource("20_23sol")
+theme_override_font_sizes/font_size = 8
+text = "A D 
+or ← → to move!"
 
 [node name="Label1" type="Label" parent="label"]
 offset_left = 209.0
@@ -644,14 +658,14 @@ theme_override_font_sizes/font_size = 8
 text = "space to jump!"
 
 [node name="Label2" type="Label" parent="label"]
-offset_left = 396.0
-offset_top = -52.0
-offset_right = 568.0
-offset_bottom = -29.0
+offset_left = 387.0
+offset_top = -54.0
+offset_right = 559.0
+offset_bottom = -31.0
 theme_override_fonts/font = ExtResource("20_23sol")
 theme_override_font_sizes/font_size = 8
 text = "Press E to 
-break!"
+break it!"
 
 [node name="Label5" type="Label" parent="label"]
 offset_left = 663.0

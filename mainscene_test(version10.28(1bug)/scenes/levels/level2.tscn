@@ -1,4 +1,4 @@
-[gd_scene load_steps=67 format=3 uid="uid://b8hhw3q52i02v"]
+[gd_scene load_steps=68 format=3 uid="uid://b8hhw3q52i02v"]
 
 [ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_ms4g3"]
 [ext_resource type="PackedScene" uid="uid://cyst85fsck5xa" path="res://scenes/player_test.tscn" id="2_5si2t"]
@@ -16,7 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://cmfbtcwnt5vbx" path="res://scenes/levels/level3.tscn" id="9_qmlwv"]
 [ext_resource type="Texture2D" uid="uid://c238fig58ge6u" path="res://asset/own art assets/back ground.png" id="10_50x7r"]
 [ext_resource type="PackedScene" uid="uid://cm825i37xsynf" path="res://scenes/platform_1.tscn" id="10_bej3h"]
-[ext_resource type="PackedScene" uid="uid://cla22ju3wrqcc" path="res://scenes/slime.tscn" id="11_qomes"]
+[ext_resource type="PackedScene" uid="uid://cla22ju3wrqcc" path="res://scenes/eagle.tscn" id="11_qomes"]
 [ext_resource type="AudioStream" uid="uid://cexs0bvxcabpl" path="res://Audio Files/Audio Level 2 (Flute)/Flute Song.mp3" id="13_cr3bc"]
 [ext_resource type="AudioStream" uid="uid://coa2dvsy3r3ag" path="res://Audio Files/Audio Level 2 (Flute)/C4.mp3" id="15_1mji1"]
 [ext_resource type="AudioStream" uid="uid://oywwrubibvho" path="res://Audio Files/Audio Level 2 (Flute)/A4.mp3" id="16_moyti"]
@@ -28,6 +28,7 @@
 [ext_resource type="AudioStream" uid="uid://bcyqlyuxjvlem" path="res://Audio Files/Audio Level 2 (Flute)/B4.mp3" id="22_8o0bu"]
 [ext_resource type="AudioStream" uid="uid://dy7ie5mv732j0" path="res://Audio Files/Audio Level 2 (Flute)/G4.mp3" id="23_sxdjp"]
 [ext_resource type="Texture2D" uid="uid://orgy1gd8jcyl" path="res://asset/Background/Background_DesertMountains/background1.png" id="27_bi6lq"]
+[ext_resource type="PackedScene" uid="uid://bju2pomxuvw8y" path="res://scenes/slime1.tscn" id="27_wln61"]
 [ext_resource type="Texture2D" uid="uid://dtoxxsu1k8j8i" path="res://asset/Background/Background_DesertMountains/background2.png" id="28_ws82u"]
 [ext_resource type="Texture2D" uid="uid://ct0tp1nbwa7j3" path="res://asset/Background/Background_DesertMountains/background3.png" id="29_11gcd"]
 [ext_resource type="Texture2D" uid="uid://02luain17700" path="res://asset/Background/Background_DesertMountains/cloud5.png" id="30_sd1q0"]
@@ -970,8 +971,8 @@ autoplay = "RESET"
 
 [node name="enemy" type="Node" parent="."]
 
-[node name="slime" parent="enemy" instance=ExtResource("11_qomes")]
-position = Vector2(1244, -3)
+[node name="slime" parent="enemy" instance=ExtResource("27_wln61")]
+position = Vector2(1234, -5)
 
 [node name="slime2" parent="enemy" instance=ExtResource("11_qomes")]
 position = Vector2(1374, -221)

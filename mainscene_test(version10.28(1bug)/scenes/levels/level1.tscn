@@ -1,4 +1,4 @@
-[gd_scene load_steps=52 format=3 uid="uid://bmul6gare3yxr"]
+[gd_scene load_steps=53 format=3 uid="uid://bmul6gare3yxr"]
 
 [ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_nl1fl"]
 [ext_resource type="PackedScene" uid="uid://cyst85fsck5xa" path="res://scenes/player_test.tscn" id="1_rhjrj"]
@@ -15,7 +15,7 @@
 [ext_resource type="AudioStream" uid="uid://geqkany7t3hb" path="res://Audio Files/Audio Level 1 (Guitar)/G4.mp3" id="6_qn1hs"]
 [ext_resource type="PackedScene" uid="uid://kde3axxra348" path="res://scenes/win_zone.tscn" id="7_br5hx"]
 [ext_resource type="AudioStream" uid="uid://bkalfp38bbuxh" path="res://Audio Files/Audio Level 1 (Guitar)/F4.mp3" id="7_fppn5"]
-[ext_resource type="PackedScene" uid="uid://cla22ju3wrqcc" path="res://scenes/slime.tscn" id="7_hl4sw"]
+[ext_resource type="PackedScene" uid="uid://cla22ju3wrqcc" path="res://scenes/eagle.tscn" id="7_hl4sw"]
 [ext_resource type="AudioStream" uid="uid://c0vos80emlkh8" path="res://Audio Files/Audio Level 1 (Guitar)/D4.mp3" id="8_hekwe"]
 [ext_resource type="PackedScene" uid="uid://b8hhw3q52i02v" path="res://scenes/levels/level2.tscn" id="8_hrgky"]
 [ext_resource type="AudioStream" uid="uid://ch5uagnib583t" path="res://Audio Files/Audio Level 1 (Guitar)/B3.mp3" id="9_tlfn5"]
@@ -24,6 +24,7 @@
 [ext_resource type="AudioStream" uid="uid://b7jf8qn1ix2q3" path="res://Audio Files/Audio Level 1 (Guitar)/Guitar Song.mp3" id="17_ot3u2"]
 [ext_resource type="Texture2D" uid="uid://b2m82nromum1g" path="res://asset/Background/Background_Hills_v1.0(1)/_PNG/background1.png" id="21_v0f3x"]
 [ext_resource type="Texture2D" uid="uid://bqio3aqvkdf5e" path="res://asset/Background/Background_Hills_v1.0(1)/_PNG/background2.png" id="22_ocjig"]
+[ext_resource type="PackedScene" uid="uid://bju2pomxuvw8y" path="res://scenes/slime1.tscn" id="22_rtuix"]
 [ext_resource type="Texture2D" uid="uid://chsectf2qrs1i" path="res://asset/Background/Background_Hills_v1.0(1)/_PNG/background3.png" id="23_4yps8"]
 [ext_resource type="Texture2D" uid="uid://bnhd54cvqolmx" path="res://asset/Background/Background_Hills_v1.0(1)/_PNG/background4.png" id="24_4hfqk"]
 [ext_resource type="PackedScene" uid="uid://c0ce76gsy6sy7" path="res://scenes/disappearing_object.tscn" id="29_pdhek"]
@@ -769,11 +770,11 @@ autoplay = "move3"
 
 [node name="enemy" type="Node" parent="."]
 
+[node name="slime2" parent="enemy" instance=ExtResource("22_rtuix")]
+position = Vector2(803, -181)
+
 [node name="slime" parent="enemy" instance=ExtResource("7_hl4sw")]
 position = Vector2(671, -97)
-
-[node name="slime2" parent="enemy" instance=ExtResource("7_hl4sw")]
-position = Vector2(816, -181)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = -1

@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://cm825i37xsynf" path="res://scenes/platform_1.tscn" id="4_rxhym"]
 [ext_resource type="PackedScene" uid="uid://dj0hllcm6fj0l" path="res://scenes/coin.tscn" id="5_6gg6t"]
 [ext_resource type="PackedScene" uid="uid://bpvytm7tglis5" path="res://scenes/killzone.tscn" id="6_pd6vw"]
-[ext_resource type="PackedScene" uid="uid://cla22ju3wrqcc" path="res://scenes/slime.tscn" id="7_rvl1b"]
+[ext_resource type="PackedScene" uid="uid://cla22ju3wrqcc" path="res://scenes/eagle.tscn" id="7_rvl1b"]
 [ext_resource type="FontFile" uid="uid://cghgc7rm1slap" path="res://asset/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="8_28hfy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j5g36"]
