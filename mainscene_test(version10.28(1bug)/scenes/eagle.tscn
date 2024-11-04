@@ -59,7 +59,6 @@ frame_progress = 0.992705
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D/killzone"]
 position = Vector2(0.441176, 2.47059)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_j6vm1")
 
 [node name="RayCast_left" type="RayCast2D" parent="."]

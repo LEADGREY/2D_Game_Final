@@ -684,7 +684,7 @@ libraries = {
 autoplay = "ckeckpoint"
 
 [node name="Player_test" parent="." instance=ExtResource("1_rhjrj")]
-position = Vector2(354, -144)
+position = Vector2(62, 76)
 scale = Vector2(0.6, 0.6)
 
 [node name="TileMap" type="TileMap" parent="."]
