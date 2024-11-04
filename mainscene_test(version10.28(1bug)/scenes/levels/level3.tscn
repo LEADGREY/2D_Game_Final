@@ -613,7 +613,7 @@ unique_name_in_owner = true
 script = ExtResource("1_mxv03")
 
 [node name="Player_test" parent="." instance=ExtResource("2_yem6e")]
-position = Vector2(48, 131)
+position = Vector2(500, -285)
 scale = Vector2(0.6, 0.6)
 
 [node name="Camera2D2" type="Camera2D" parent="Player_test"]

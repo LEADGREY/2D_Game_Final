@@ -11,12 +11,29 @@ const MAX_VELOCITY = 150
 var is_alive = true
 var is_dying = false
 var is_ending = false
+var is_attacking = false
 
 
 func die():
 	animation.play("die")	
 	is_alive = false
 		
+# attack
+func attack():
+	if Input.is_action_just_pressed("attack"):
+		is_attacking = true
+		if current_level == "Level1":
+			animation.play("attack_guitar")
+			await animation.animation_finished
+			is_attacking = false
+		elif current_level == "Level2":
+			animation.play("attack_flute")
+			await animation.animation_finished
+			is_attacking = false
+		elif current_level == "Level3":
+			animation.play("attack_piano")
+			await animation.animation_finished
+			is_attacking = false
 
 
 func _physics_process(delta: float) -> void:
@@ -38,16 +55,23 @@ func _physics_process(delta: float) -> void:
 	# Get the input direction =-1, 0, 1
 	var direction := Input.get_axis("move_left", "move_right")
 	
+	# Attack
+	if Input.is_action_just_pressed("attack"):
+		attack()
+
+		
 	#flip the sprite
 	if direction > 0 :
 		animation.flip_h = false
 	elif direction < 0:
 		animation.flip_h = true
-	
+		
 	# play animation
 	if is_dying:
 		return
-	
+	if is_attacking:
+		return
+		
 	if is_on_floor():
 		if direction == 0 :
 			if is_alive:
@@ -59,13 +83,6 @@ func _physics_process(delta: float) -> void:
 		if is_alive:
 			animation.play("jump")
 	
-	if Input.is_action_just_pressed("attack"):
-		if current_level == "Level1":
-			animation.play("guitar")
-		elif current_level == "Level2":
-			animation.play("flute")
-		elif current_level == "Level3":
-			animation.play("piano")	
 	
 	# apply movement
 	if direction:
