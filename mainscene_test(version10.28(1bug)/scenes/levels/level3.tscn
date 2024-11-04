@@ -1,4 +1,4 @@
-[gd_scene load_steps=58 format=3 uid="uid://cmfbtcwnt5vbx"]
+[gd_scene load_steps=59 format=3 uid="uid://cmfbtcwnt5vbx"]
 
 [ext_resource type="Texture2D" uid="uid://dxlgpb6a3c8y3" path="res://asset/own art assets/checkpoint.png" id="1_iyakn"]
 [ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_mxv03"]
@@ -30,6 +30,7 @@
 [ext_resource type="PackedScene" uid="uid://b5jbmeafg5020" path="res://scenes/disappearing_object2.tscn" id="28_1jhvw"]
 [ext_resource type="PackedScene" uid="uid://b4hevxxo358dp" path="res://角色、推箱子部分/push box.tscn" id="28_4r35c"]
 [ext_resource type="PackedScene" uid="uid://c0ce76gsy6sy7" path="res://scenes/disappearing_object.tscn" id="29_cmrrm"]
+[ext_resource type="AudioStream" uid="uid://c8mf0wcje6yt7" path="res://Audio Files/bgm/castle.mp3" id="31_bepv8"]
 
 [sub_resource type="Animation" id="Animation_thtu0"]
 length = 0.001
@@ -880,3 +881,7 @@ position = Vector2(1154, 91)
 
 [node name="pushbox5" parent="push" instance=ExtResource("28_4r35c")]
 position = Vector2(882, -260)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("31_bepv8")
+autoplay = true

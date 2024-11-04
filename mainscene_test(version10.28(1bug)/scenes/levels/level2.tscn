@@ -1,4 +1,4 @@
-[gd_scene load_steps=68 format=3 uid="uid://b8hhw3q52i02v"]
+[gd_scene load_steps=69 format=3 uid="uid://b8hhw3q52i02v"]
 
 [ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_ms4g3"]
 [ext_resource type="PackedScene" uid="uid://cyst85fsck5xa" path="res://scenes/player_test.tscn" id="2_5si2t"]
@@ -29,6 +29,7 @@
 [ext_resource type="AudioStream" uid="uid://dy7ie5mv732j0" path="res://Audio Files/Audio Level 2 (Flute)/G4.mp3" id="23_sxdjp"]
 [ext_resource type="Texture2D" uid="uid://orgy1gd8jcyl" path="res://asset/Background/Background_DesertMountains/background1.png" id="27_bi6lq"]
 [ext_resource type="PackedScene" uid="uid://bju2pomxuvw8y" path="res://scenes/slime1.tscn" id="27_wln61"]
+[ext_resource type="AudioStream" uid="uid://cf3fymdmtgfq8" path="res://Audio Files/bgm/mountain.mp3" id="27_yx64i"]
 [ext_resource type="Texture2D" uid="uid://dtoxxsu1k8j8i" path="res://asset/Background/Background_DesertMountains/background2.png" id="28_ws82u"]
 [ext_resource type="Texture2D" uid="uid://ct0tp1nbwa7j3" path="res://asset/Background/Background_DesertMountains/background3.png" id="29_11gcd"]
 [ext_resource type="Texture2D" uid="uid://02luain17700" path="res://asset/Background/Background_DesertMountains/cloud5.png" id="30_sd1q0"]
@@ -968,6 +969,12 @@ libraries = {
 "": SubResource("AnimationLibrary_w2pxo")
 }
 autoplay = "RESET"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(1234, -5)
+stream = ExtResource("27_yx64i")
+volume_db = -1.0
+autoplay = true
 
 [node name="enemy" type="Node" parent="."]
 

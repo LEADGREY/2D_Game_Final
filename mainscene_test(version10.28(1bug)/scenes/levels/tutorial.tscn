@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=3 uid="uid://bugjgi5qjnkl2"]
+[gd_scene load_steps=42 format=3 uid="uid://bugjgi5qjnkl2"]
 
 [ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_bgthq"]
 [ext_resource type="PackedScene" uid="uid://dj0hllcm6fj0l" path="res://scenes/coin.tscn" id="2_t1bve"]
@@ -26,6 +26,7 @@
 [ext_resource type="Texture2D" uid="uid://1dek86nmpke8" path="res://asset/Background/Background_Town/_PNG/background_Town2.png" id="22_cmtph"]
 [ext_resource type="Texture2D" uid="uid://dkru7f5dwsaig" path="res://asset/Background/Background_Town/_PNG/background_Town3.png" id="23_oxxw8"]
 [ext_resource type="PackedScene" uid="uid://c0ce76gsy6sy7" path="res://scenes/disappearing_object.tscn" id="25_vv044"]
+[ext_resource type="AudioStream" uid="uid://yjdjokb5ttm5" path="res://Audio Files/bgm/tutorial.mp3" id="26_cwrip"]
 [ext_resource type="PackedScene" uid="uid://b4hevxxo358dp" path="res://角色、推箱子部分/push box.tscn" id="26_sungf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i7647"]
@@ -694,6 +695,13 @@ theme_override_fonts/font = ExtResource("20_23sol")
 theme_override_font_sizes/font_size = 8
 text = "Watch out for 
 monsters!"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(387, -54)
+stream = ExtResource("26_cwrip")
+volume_db = -1.0
+autoplay = true
+attenuation = 0.420448
 
 [node name="pushbox" parent="." instance=ExtResource("26_sungf")]
 position = Vector2(723, -51)
