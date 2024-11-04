@@ -1,5 +1,5 @@
 extends CharacterBody2D
-#hi
+
 const SPEED = 150.0
 const JUMP_VELOCITY = -380.0
 const PUSH_FORCE = 100
