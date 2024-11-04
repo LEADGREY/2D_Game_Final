@@ -89,7 +89,8 @@ func _physics_process(delta: float) -> void:
 		velocity.x = direction * SPEED
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
-		
+	move_and_slide()	
+	
 	for i in get_slide_collision_count():
 		var collision = get_slide_collision(i)
 		var collision_pushbox = collision.get_collider()
@@ -98,7 +99,7 @@ func _physics_process(delta: float) -> void:
 				collision_pushbox.apply_central_impulse(collision.get_normal() * -PUSH_FORCE)
  
 
-	move_and_slide()
+	
 	
 # win zone
 func endLevel() -> void:
