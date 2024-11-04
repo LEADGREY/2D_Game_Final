@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://d0cxkny6r4tkr"]
+[gd_scene load_steps=10 format=3 uid="uid://d0cxkny6r4tkr"]
 
 [ext_resource type="Texture2D" uid="uid://bearpwjg3qhcm" path="res://asset/Background/Background_temple/background.png" id="1_trqgb"]
 [ext_resource type="Texture2D" uid="uid://duo6fa3i56krt" path="res://asset/Background/Background_temple/background2.png" id="2_ghr2q"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cvwrmuclggqoc" path="res://asset/Background/Background_temple/background4.png" id="4_mgldt"]
 [ext_resource type="Texture2D" uid="uid://bdh72pvv0cmme" path="res://asset/ending_illustration.png" id="5_p6gwn"]
 [ext_resource type="FontFile" uid="uid://crghpnlcrbnu2" path="res://asset/Font File/SeraphonRegular-yYLDY.otf" id="6_eptmh"]
+[ext_resource type="AudioStream" uid="uid://di46ucaj6a4af" path="res://Audio Files/bgm/Win(FF9).mp3" id="7_oxvu1"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uc5lt"]
 texture = ExtResource("1_trqgb")
@@ -81,3 +82,9 @@ text = "You Win!"
 label_settings = SubResource("LabelSettings_7765j")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_oxvu1")
+volume_db = 1.0
+autoplay = true
+attenuation = 0.659754
